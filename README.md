@@ -18,7 +18,14 @@ codex plugin marketplace add Automated-Client-Acquisition/kivloo-plugins
 codex plugin add kivloo@kivloo
 ```
 
-**Claude (web and desktop), ChatGPT and Grok:** add a custom connector with this server URL:
+**Grok Build**
+
+```sh
+grok plugin marketplace add Automated-Client-Acquisition/kivloo-plugins
+grok plugin install kivloo
+```
+
+**Claude (web and desktop), ChatGPT and grok.com:** add a custom connector with this server URL:
 
 ```
 https://kivloo.com/api/mcp
