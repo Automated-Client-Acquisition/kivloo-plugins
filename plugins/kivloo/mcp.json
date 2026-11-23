@@ -3,20 +3,7 @@
   "mcpServers": {
     "kivloo": {
       "type": "streamable-http",
-      "url": "https://kivloo.com/api/mcp",
-      "extensions": {
-        "com.openai": {
-          "auth": {
-            "type": "oauth",
-            "client": {
-              "mode": "dcr"
-            },
-            "baseScopes": [
-              "openid"
-            ]
-          }
-        }
-      }
+      "url": "https://kivloo.com/api/mcp"
     }
   }
 }

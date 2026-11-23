@@ -52,7 +52,7 @@
         "test_cases": {
           "positive": [
             {
-              "description": "Use a dedicated demo workspace with three October 1–27, 2026 UTC inspection logs for one percentage-scored template: completed score 0 with two deviations; signed score 100 with no deviations; draft without score and no deviations. All are in Demo Kitchen. Data must be provisioned before this case is run.",
+              "description": "Use a dedicated demo workspace with three October 1–27, 2026 UTC inspection logs for one percentage-scored template: completed score 0 with two deviations; completed score 100 with no deviations; draft without score and no deviations. All are in Demo Kitchen. Data is provisioned by scripts/openai-review-demo-seed.sql in the reviewer's workspace.",
               "prompt": "For Demo Kitchen, analyse inspections created from October 1 through October 27, 2026, in UTC. Show completion, average completed score, deviations, and the source records.",
               "tools_triggered": "kivloo_workspace, kivloo_list_records, kivloo_analytics_summary, kivloo_pull_analytics",
               "expected_behavior": "Resolve the site from the current workspace. Use inspections, created_at, from 2026-10-01T00:00:00Z and exclusive to 2026-10-28T00:00:00Z. With the specified fixture, report 3 records, 2 completed, approximately 66.67% completion, average completed score 50 and 2 recorded deviations. Cite source records, inspect coverage, and retain the zero score."
