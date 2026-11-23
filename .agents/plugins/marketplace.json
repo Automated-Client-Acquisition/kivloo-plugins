@@ -1,0 +1,20 @@
+{
+  "name": "kivloo",
+  "interface": {
+    "displayName": "Kivloo"
+  },
+  "plugins": [
+    {
+      "name": "kivloo",
+      "source": {
+        "source": "local",
+        "path": "./plugins/kivloo"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Business & Operations"
+    }
+  ]
+}
