@@ -11,7 +11,7 @@
       "name": "kivloo",
       "source": "./plugins/kivloo",
       "description": "Draft HACCP plans, SOPs, workplace safety and maritime documents, build compliance checklists, and analyse workplace data with Kivloo.",
-      "version": "0.2.0",
+      "version": "0.2.1",
       "license": "MIT",
       "keywords": [
         "compliance",

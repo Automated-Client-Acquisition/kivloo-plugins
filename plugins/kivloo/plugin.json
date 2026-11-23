@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "kivloo",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Draft HACCP plans, SOPs, workplace safety and maritime documents, build compliance checklists, and analyse workplace data with Kivloo.",
   "author": {
     "name": "Kivloo",
@@ -35,7 +35,7 @@
         "logo": "./assets/icon.png",
         "composerIcon": "./assets/icon.png",
         "developerName": "Kivloo",
-        "websiteURL": "https://kivloo.com",
+        "websiteURL": "https://kivloo.com/ai-agents",
         "supportURL": "https://kivloo.com/contact",
         "privacyPolicyURL": "https://kivloo.com/privacy",
         "termsOfServiceURL": "https://kivloo.com/terms",
@@ -99,7 +99,7 @@
         }
       },
       "publication": {
-        "release_notes": "Kivloo connector: read workspace records, analyse inspections and sensor readings, trace recorded lots, and let administrators save SOP drafts and private checklists for human review. Four workflow skills included.",
+        "release_notes": "0.2.1: HACCP, US FSMA, workplace safety (incl. OSHA) and maritime (incl. USCG) skills; drafts saved as their own document types; any-assistant OAuth sign-in with dynamic client registration.",
         "countries": []
       }
     }

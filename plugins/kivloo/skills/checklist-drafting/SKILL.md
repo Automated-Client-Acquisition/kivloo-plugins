@@ -15,7 +15,7 @@ Build a native checklist with pages (sections), questions and typed answers. Eac
       "id": "question-handwash", "text": "Is the handwashing station stocked?", "order": 0, "isRequired": true,
       "answers": [{
         "id": "answer-handwash", "type": "closed", "label": "Result", "order": 0, "isMandatory": true,
-        "config": {"options": [{"label": "Pass", "value": "pass", "isFailed": false}, {"label": "Fail", "value": "fail", "isFailed": true}]}
+        "config": {"options": [{"label": "OK", "value": "ok", "isFailed": false}, {"label": "Not OK", "value": "not_ok", "isFailed": true}]}
       }]
     }]
   }],
@@ -23,8 +23,8 @@ Build a native checklist with pages (sections), questions and typed answers. Eac
 }
 ```
 
-Use the answer types supported by the schema: closed choices for pass/fail checks, temperature/number for measurements, text/textarea for observations, photo for evidence, date/time/datetime for timing, and signature when requested. Only use verified limits and units. Ask for essential missing operating parameters; never invent a safe range or claim a regulatory threshold was verified. Do not fill in inspection answers, readings, signatures or completion times.
+Use the answer types supported by the schema: closed choices for OK / not OK checks, temperature/number for measurements, text/textarea for observations, photo for evidence, date/time/datetime for timing, and signature when requested. Only use verified limits and units. Ask for essential missing operating parameters; never invent a safe range or claim a regulatory threshold was verified. Do not fill in inspection answers, readings, signatures or completion times.
 
-When asked to create/save the checklist, call `kivloo_create_checklist` with title, content, optional description/labels and optional facility_id discovered from the user's workspace. Generate one UUID idempotency_key per checklist and reuse it unchanged on retries. Creation requires an administrator. Never pass a user-supplied company or owner ID.
+When asked to create/save the checklist, call `kivloo_create_checklist` with title, content, optional description/labels and optional facility_id discovered from the user's workspace. Generate one UUID idempotency_key per checklist and reuse it unchanged on retries. Creation requires an administrator. Never send a user-supplied company or owner ID.
 
 Return the saved checklist's URL and ID. It is a private reusable template in the normal Kivloo editor, available for human review before use; it has no separate draft/approval state. State remaining assumptions. Do not claim it is a completed inspection or an approved SOP. If the user also needs an SOP, save that separately with `kivloo_save_sop_draft`.
